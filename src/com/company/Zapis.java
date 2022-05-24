@@ -14,4 +14,20 @@ public class Zapis {
         printWriter.println(tym);
         bufferedWriter.close();
     }
+    public void zapis(String s1) throws IOException {
+        FileWriter fileWriter = new FileWriter("tasks.txt",true);
+        BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+        PrintWriter printWriter = new PrintWriter(bufferedWriter);
+        String tym = s1 + "\n";
+        printWriter.println(tym);
+        bufferedWriter.close();
+    }
+    public void zapis2(String s1) throws IOException {
+        FileWriter fileWriter = new FileWriter("tasks2.txt",true);
+        BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+        PrintWriter printWriter = new PrintWriter(bufferedWriter);
+        String tym = s1 + "\n";
+        printWriter.println(tym);
+        bufferedWriter.close();
+    }
 }
