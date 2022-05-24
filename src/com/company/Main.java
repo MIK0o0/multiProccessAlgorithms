@@ -9,8 +9,8 @@ public class Main {
     public static void main(String[] args) throws IOException {
 
     callGenerator generator = new callGenerator();
-    int n = 1000000;
-    int ramki = 200;
+    int n = 100000;
+    int ramki = 1000;
     int arrivalTime = 20000;
     //generator.generator(n,arrivalTime,max);
 
@@ -18,9 +18,11 @@ public class Main {
 
     symulation symulation = new symulation(n);
         System.out.println(symulation.rozmiary);
-        System.out.println(symulation.globalSize);
+        //System.out.println(symulation.globalSize);
         System.out.println(symulation.przydzialRowny(ramki));
         System.out.println(symulation.przydzialProporcjonalny(ramki));
+        System.out.println(symulation.sterowanieCzestoscia(ramki,arrivalTime));
+        System.out.println(symulation.przydzialStrefowy(ramki,100));
 
 
 
