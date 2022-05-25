@@ -23,9 +23,9 @@ public class symulation {
             int maksi = quantiti *proc/100;
             lista.add(new ArrayList<>());
             if (i == 9){
-                generator.generator(quantiti,10000,dwa, dwa*2,lista.get(i) );
+                generator.generator(quantiti,10000,dwa, dwa+(dwa/2),lista.get(i) );
             }else{
-                generator.generator(random.nextInt(1,maksi),10000,dwa,dwa*2,lista.get(i) );
+                generator.generator(random.nextInt(1,maksi),10000,dwa,dwa+(dwa/2),lista.get(i) );
             }
             quantiti -= lista.get(i).size();
             dwa *=2;
@@ -48,10 +48,11 @@ public class symulation {
         ArrayList<Integer> result = new ArrayList<>();
         int global = 0;
         for (int i = 0;i<lista.size();i++){
-            int size = (rozmiary.get(i)/globalSize) * ramki;
+            int size = (rozmiary.get(i)* ramki)/globalSize ;
             if (size == 0){
                 size++;
             }
+
             result.add(lru.lruAlgo(lista.get(i),size));
             global += result.get(i);
         }
@@ -59,16 +60,51 @@ public class symulation {
         return result;
     }
 
-    public ArrayList<Integer> sterowanieCzestoscia(int ramki){
+    public ArrayList<Integer> sterowanieCzestoscia(int ramki,int arrivalT){
+        return lru.lruAlgo(lista,ramki/20,ramki,arrivalT,rozmiary);
+    }
 
+
+
+    public ArrayList<Integer> przydzialStrefowy(int ramki,int zakres){
+        ArrayList<Integer> unikaty = new ArrayList<>();
         ArrayList<Integer> result = new ArrayList<>();
+
         int global = 0;
+        int globalUnikat = 0;
+        for (int i =0;i<10;i++){
+            unikaty.add(unikat(lista.get(i),zakres));
+            globalUnikat += unikaty.get(i);
+        }
         for (int i = 0;i<lista.size();i++){
-            int size = (rozmiary.get(i)/globalSize) * ramki;
+            int size = (unikaty.get(i)* ramki)/globalUnikat ;
+            if (size == 0){
+                size++;
+            }
+
             result.add(lru.lruAlgo(lista.get(i),size));
             global += result.get(i);
         }
         result.add(global);
         return result;
+
+
+    }
+    public int unikat(ArrayList<Call> tab,int zakres){
+        ArrayList<Call> tym = new ArrayList<>();
+        tym.add(tab.get(0));
+        for (int i = 0; i < zakres; i++) {
+            boolean flag = true;
+            for (int k = 0;k<tym.size();k++){
+                if (tab.get(i).equals(tym.get(k))){
+                    flag = false;
+                }
+            }
+            if (flag){
+                tym.add(tab.get(i));
+            }
+        }
+
+        return tym.size();
     }
 }

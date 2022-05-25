@@ -4,33 +4,39 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 public class Main {
-    public static int max = 120;
-
     public static void main(String[] args) throws IOException {
 
-    callGenerator generator = new callGenerator();
-    int n = 1000000;
-    int ramki = 200;
-    int arrivalTime = 20000;
-    //generator.generator(n,arrivalTime,max);
-
-    String main = "Liczba błedów strony dla n = " + n + ", czas pracy = " + arrivalTime + ", wielkość pamięci fizycznej = " + max + ", dla : ";
+    int n = 100000;
+    int ramki = 500;
+    int arrivalTime = 20;
+    Zapis zapis = new Zapis();
+    String main = "Dane wejściowe : 10 procesów, liczba żądań = " + n + ", czas pracy = " + arrivalTime + ", liczba dostępnych ramek = " + ramki + " ----------------------------------------------";
 
     symulation symulation = new symulation(n);
-        System.out.println(symulation.rozmiary);
-        System.out.println(symulation.globalSize);
-        System.out.println(symulation.przydzialRowny(ramki));
-        System.out.println(symulation.przydzialProporcjonalny(ramki));
+    ArrayList<Integer> rozmiary = symulation.rozmiary;
+    ArrayList<Integer> przydzialRowny = symulation.przydzialRowny(ramki);
+    ArrayList<Integer> przydzialPropo = symulation.przydzialProporcjonalny(ramki);
+    ArrayList<Integer> sterowanieCzesto = symulation.sterowanieCzestoscia(ramki,arrivalTime);
+    ArrayList<Integer> przydzialStrefo= symulation.przydzialStrefowy(ramki,100);
 
-
-
-
+    zapis.zapis(main);
+    String tym = new String();
+        System.out.println(main);
+    for (int i = 0;i<=rozmiary.size();i++){
+        if (i == 10){
+            tym = "Łączna liczba błędów: dla p. równego: " + przydzialRowny.get(i) + ",  dla p. proporcjalnego: " + przydzialPropo.get(i) +
+                    ", dla sterowania częst.: " + sterowanieCzesto.get(i) + ", dla p. strefowego: " + przydzialStrefo.get(i) + "////////////////////////////////////////////////////////\n";
+            zapis.zapis2(main);
+            zapis.zapis2(tym);
+        }else {
+            tym = "Rozmiar procesu: " + rozmiary.get(i) + " l. błędów dla p. równego: " + przydzialRowny.get(i) + ", l. błędów dla p. proporcjalnego: " + przydzialPropo.get(i) +
+                    ", l. błędów dla sterowania częst.: " + sterowanieCzesto.get(i) + ", l.błędów dla p. strefowego: " + przydzialStrefo.get(i);
+        }
+        System.out.println(tym);
+        zapis.zapis(tym);
+    }
 
     }
-public static void display(int[] tab){
-        for (int i : tab){
-            System.out.println(i);
-        }
 }
 
-}
+
