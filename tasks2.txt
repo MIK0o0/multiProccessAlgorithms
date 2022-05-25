@@ -1,3 +1,28 @@
 
 
 
+Dane wejściowe : 10 procesów, liczba żądań = 100000, czas pracy = 20, liczba dostępnych ramek = 500 ----------------------------------------------
+
+Łączna liczba błędów: dla p. równego: 27392,  dla p. proporcjalnego: 49476, dla sterowania częst.: 123, dla p. strefowego: 17793////////////////////////////////////////////////////////
+
+
+Dane wejściowe : 10 procesów, liczba żądań = 1000000, czas pracy = 20, liczba dostępnych ramek = 500 ----------------------------------------------
+
+Łączna liczba błędów: dla p. równego: 262303,  dla p. proporcjalnego: 505319, dla sterowania częst.: 757, dla p. strefowego: 184548////////////////////////////////////////////////////////
+
+
+Dane wejściowe : 10 procesów, liczba żądań = 1000000, czas pracy = 20, liczba dostępnych ramek = 20 ----------------------------------------------
+
+Łączna liczba błędów: dla p. równego: 721411,  dla p. proporcjalnego: 809067, dla sterowania częst.: 1239, dla p. strefowego: 807718////////////////////////////////////////////////////////
+
+
+Dane wejściowe : 10 procesów, liczba żądań = 1000000, czas pracy = 5, liczba dostępnych ramek = 20 ----------------------------------------------
+
+Łączna liczba błędów: dla p. równego: 760248,  dla p. proporcjalnego: 872356, dla sterowania częst.: 215, dla p. strefowego: 870421////////////////////////////////////////////////////////
+
+
+Dane wejściowe : 10 procesów, liczba żądań = 1000000, czas pracy = 20000, liczba dostępnych ramek = 1000 ----------------------------------------------
+
+Łączna liczba błędów: dla p. równego: 333561,  dla p. proporcjalnego: 97259, dla sterowania częst.: 313993, dla p. strefowego: 138610////////////////////////////////////////////////////////
+
+

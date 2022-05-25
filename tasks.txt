@@ -224,3 +224,153 @@ Rozmiar procesu: 1024 l. błędów dla p. równego: 29052, l. błędów dla p. p
 Łączna liczba błędów: dla p. równego: 33472,  dla p. proporcjalnego: 49503, dla sterowania częst.: 92, dla p. strefowego: 26230////////////////////////////////////////////////////////
 
 
+Dane wejściowe : 10 procesów, liczba żądań = 100000, czas pracy = 20, liczba dostępnych ramek = 500 ----------------------------------------------
+
+Rozmiar procesu: 2 l. błędów dla p. równego: 1, l. błędów dla p. proporcjalnego: 1, l. błędów dla sterowania częst.: 1, l.błędów dla p. strefowego: 1
+
+Rozmiar procesu: 4 l. błędów dla p. równego: 2, l. błędów dla p. proporcjalnego: 4391, l. błędów dla sterowania częst.: 2, l.błędów dla p. strefowego: 2
+
+Rozmiar procesu: 8 l. błędów dla p. równego: 4, l. błędów dla p. proporcjalnego: 2326, l. błędów dla sterowania częst.: 4, l.błędów dla p. strefowego: 4
+
+Rozmiar procesu: 16 l. błędów dla p. równego: 8, l. błędów dla p. proporcjalnego: 3602, l. błędów dla sterowania częst.: 4, l.błędów dla p. strefowego: 8
+
+Rozmiar procesu: 32 l. błędów dla p. równego: 16, l. błędów dla p. proporcjalnego: 11305, l. błędów dla sterowania częst.: 20, l.błędów dla p. strefowego: 16
+
+Rozmiar procesu: 64 l. błędów dla p. równego: 32, l. błędów dla p. proporcjalnego: 6123, l. błędów dla sterowania częst.: 13, l.błędów dla p. strefowego: 32
+
+Rozmiar procesu: 128 l. błędów dla p. równego: 2245, l. błędów dla p. proporcjalnego: 5188, l. błędów dla sterowania częst.: 17, l.błędów dla p. strefowego: 64
+
+Rozmiar procesu: 256 l. błędów dla p. równego: 8028, l. błędów dla p. proporcjalnego: 6797, l. błędów dla sterowania częst.: 20, l.błędów dla p. strefowego: 3453
+
+Rozmiar procesu: 512 l. błędów dla p. równego: 347, l. błędów dla p. proporcjalnego: 242, l. błędów dla sterowania częst.: 1, l.błędów dla p. strefowego: 244
+
+Rozmiar procesu: 1024 l. błędów dla p. równego: 16709, l. błędów dla p. proporcjalnego: 9501, l. błędów dla sterowania częst.: 41, l.błędów dla p. strefowego: 13969
+
+Łączna liczba błędów: dla p. równego: 27392,  dla p. proporcjalnego: 49476, dla sterowania częst.: 123, dla p. strefowego: 17793////////////////////////////////////////////////////////
+
+
+Dane wejściowe : 10 procesów, liczba żądań = 1000000, czas pracy = 20, liczba dostępnych ramek = 500 ----------------------------------------------
+
+Rozmiar procesu: 2 l. błędów dla p. równego: 1, l. błędów dla p. proporcjalnego: 1, l. błędów dla sterowania częst.: 1, l.błędów dla p. strefowego: 1
+
+Rozmiar procesu: 4 l. błędów dla p. równego: 2, l. błędów dla p. proporcjalnego: 56150, l. błędów dla sterowania częst.: 2, l.błędów dla p. strefowego: 2
+
+Rozmiar procesu: 8 l. błędów dla p. równego: 4, l. błędów dla p. proporcjalnego: 21176, l. błędów dla sterowania częst.: 4, l.błędów dla p. strefowego: 4
+
+Rozmiar procesu: 16 l. błędów dla p. równego: 8, l. błędów dla p. proporcjalnego: 98827, l. błędów dla sterowania częst.: 8, l.błędów dla p. strefowego: 8
+
+Rozmiar procesu: 32 l. błędów dla p. równego: 16, l. błędów dla p. proporcjalnego: 50699, l. błędów dla sterowania częst.: 41, l.błędów dla p. strefowego: 16
+
+Rozmiar procesu: 64 l. błędów dla p. równego: 32, l. błędów dla p. proporcjalnego: 73651, l. błędów dla sterowania częst.: 91, l.błędów dla p. strefowego: 32
+
+Rozmiar procesu: 128 l. błędów dla p. równego: 28030, l. błędów dla p. proporcjalnego: 65977, l. błędów dla sterowania częst.: 174, l.błędów dla p. strefowego: 64
+
+Rozmiar procesu: 256 l. błędów dla p. równego: 13374, l. błędów dla p. proporcjalnego: 11275, l. błędów dla sterowania częst.: 31, l.błędów dla p. strefowego: 5231
+
+Rozmiar procesu: 512 l. błędów dla p. równego: 28647, l. błędów dla p. proporcjalnego: 18290, l. błędów dla sterowania częst.: 44, l.błędów dla p. strefowego: 19797
+
+Rozmiar procesu: 1024 l. błędów dla p. równego: 192189, l. błędów dla p. proporcjalnego: 109273, l. błędów dla sterowania częst.: 361, l.błędów dla p. strefowego: 159393
+
+Łączna liczba błędów: dla p. równego: 262303,  dla p. proporcjalnego: 505319, dla sterowania częst.: 757, dla p. strefowego: 184548////////////////////////////////////////////////////////
+
+
+Dane wejściowe : 10 procesów, liczba żądań = 1000000, czas pracy = 20, liczba dostępnych ramek = 20 ----------------------------------------------
+
+Rozmiar procesu: 2 l. błędów dla p. równego: 1, l. błędów dla p. proporcjalnego: 1, l. błędów dla sterowania częst.: 1, l.błędów dla p. strefowego: 1
+
+Rozmiar procesu: 4 l. błędów dla p. równego: 2, l. błędów dla p. proporcjalnego: 34499, l. błędów dla sterowania częst.: 6, l.błędów dla p. strefowego: 34499
+
+Rozmiar procesu: 8 l. błędów dla p. równego: 63606, l. błędów dla p. proporcjalnego: 95444, l. błędów dla sterowania częst.: 12, l.błędów dla p. strefowego: 95444
+
+Rozmiar procesu: 16 l. błędów dla p. równego: 55026, l. błędów dla p. proporcjalnego: 64237, l. błędów dla sterowania częst.: 112, l.błędów dla p. strefowego: 64237
+
+Rozmiar procesu: 32 l. błędów dla p. równego: 129829, l. błędów dla p. proporcjalnego: 139015, l. błędów dla sterowania częst.: 245, l.błędów dla p. strefowego: 139015
+
+Rozmiar procesu: 64 l. błędów dla p. równego: 111243, l. błędów dla p. proporcjalnego: 114914, l. błędów dla sterowania częst.: 208, l.błędów dla p. strefowego: 114914
+
+Rozmiar procesu: 128 l. błędów dla p. równego: 109108, l. błędów dla p. proporcjalnego: 110850, l. błędów dla sterowania częst.: 186, l.błędów dla p. strefowego: 109108
+
+Rozmiar procesu: 256 l. błędów dla p. równego: 86632, l. błędów dla p. proporcjalnego: 86632, l. błędów dla sterowania częst.: 160, l.błędów dla p. strefowego: 85309
+
+Rozmiar procesu: 512 l. błędów dla p. równego: 32769, l. błędów dla p. proporcjalnego: 32410, l. błędów dla sterowania częst.: 64, l.błędów dla p. strefowego: 32528
+
+Rozmiar procesu: 1024 l. błędów dla p. równego: 133195, l. błędów dla p. proporcjalnego: 131065, l. błędów dla sterowania częst.: 245, l.błędów dla p. strefowego: 132663
+
+Łączna liczba błędów: dla p. równego: 721411,  dla p. proporcjalnego: 809067, dla sterowania częst.: 1239, dla p. strefowego: 807718////////////////////////////////////////////////////////
+
+
+Dane wejściowe : 10 procesów, liczba żądań = 1000000, czas pracy = 2, liczba dostępnych ramek = 20 ----------------------------------------------
+
+Rozmiar procesu: 2 l. błędów dla p. równego: 1, l. błędów dla p. proporcjalnego: 1, l. błędów dla sterowania częst.: 0, l.błędów dla p. strefowego: 1
+
+Rozmiar procesu: 4 l. błędów dla p. równego: 2, l. błędów dla p. proporcjalnego: 19178, l. błędów dla sterowania częst.: 0, l.błędów dla p. strefowego: 19178
+
+Rozmiar procesu: 8 l. błędów dla p. równego: 62908, l. błędów dla p. proporcjalnego: 94336, l. błędów dla sterowania częst.: 0, l.błędów dla p. strefowego: 94336
+
+Rozmiar procesu: 16 l. błędów dla p. równego: 42011, l. błędów dla p. proporcjalnego: 48975, l. błędów dla sterowania częst.: 0, l.błędów dla p. strefowego: 48975
+
+Rozmiar procesu: 32 l. błędów dla p. równego: 120575, l. błędów dla p. proporcjalnego: 129199, l. błędów dla sterowania częst.: 0, l.błędów dla p. strefowego: 129199
+
+Rozmiar procesu: 64 l. błędów dla p. równego: 37121, l. błędów dla p. proporcjalnego: 38437, l. błędów dla sterowania częst.: 0, l.błędów dla p. strefowego: 38437
+
+Rozmiar procesu: 128 l. błędów dla p. równego: 179170, l. błędów dla p. proporcjalnego: 182177, l. błędów dla sterowania częst.: 0, l.błędów dla p. strefowego: 179170
+
+Rozmiar procesu: 256 l. błędów dla p. równego: 107856, l. błędów dla p. proporcjalnego: 107856, l. błędów dla sterowania częst.: 0, l.błędów dla p. strefowego: 106127
+
+Rozmiar procesu: 512 l. błędów dla p. równego: 9189, l. błędów dla p. proporcjalnego: 9072, l. błędów dla sterowania częst.: 0, l.błędów dla p. strefowego: 9110
+
+Rozmiar procesu: 1024 l. błędów dla p. równego: 243582, l. błędów dla p. proporcjalnego: 239794, l. błędów dla sterowania częst.: 0, l.błędów dla p. strefowego: 242648
+
+Łączna liczba błędów: dla p. równego: 802415,  dla p. proporcjalnego: 869025, dla sterowania częst.: 0, dla p. strefowego: 867181////////////////////////////////////////////////////////
+
+
+Dane wejściowe : 10 procesów, liczba żądań = 1000000, czas pracy = 5, liczba dostępnych ramek = 20 ----------------------------------------------
+
+Rozmiar procesu: 2 l. błędów dla p. równego: 1, l. błędów dla p. proporcjalnego: 1, l. błędów dla sterowania częst.: 0, l.błędów dla p. strefowego: 1
+
+Rozmiar procesu: 4 l. błędów dla p. równego: 2, l. błędów dla p. proporcjalnego: 69956, l. błędów dla sterowania częst.: 6, l.błędów dla p. strefowego: 69956
+
+Rozmiar procesu: 8 l. błędów dla p. równego: 57251, l. błędów dla p. proporcjalnego: 85753, l. błędów dla sterowania częst.: 21, l.błędów dla p. strefowego: 85753
+
+Rozmiar procesu: 16 l. błędów dla p. równego: 43646, l. błędów dla p. proporcjalnego: 50935, l. błędów dla sterowania częst.: 19, l.błędów dla p. strefowego: 50935
+
+Rozmiar procesu: 32 l. błędów dla p. równego: 74279, l. błędów dla p. proporcjalnego: 79521, l. błędów dla sterowania częst.: 19, l.błędów dla p. strefowego: 79521
+
+Rozmiar procesu: 64 l. błędów dla p. równego: 108308, l. błędów dla p. proporcjalnego: 111976, l. błędów dla sterowania częst.: 26, l.błędów dla p. strefowego: 111976
+
+Rozmiar procesu: 128 l. błędów dla p. równego: 114924, l. błędów dla p. proporcjalnego: 116751, l. błędów dla sterowania częst.: 23, l.błędów dla p. strefowego: 112981
+
+Rozmiar procesu: 256 l. błędów dla p. równego: 50746, l. błędów dla p. proporcjalnego: 50746, l. błędów dla sterowania częst.: 19, l.błędów dla p. strefowego: 50318
+
+Rozmiar procesu: 512 l. błędów dla p. równego: 136047, l. błędów dla p. proporcjalnego: 134467, l. błędów dla sterowania częst.: 38, l.błędów dla p. strefowego: 134990
+
+Rozmiar procesu: 1024 l. błędów dla p. równego: 175044, l. błędów dla p. proporcjalnego: 172250, l. błędów dla sterowania częst.: 44, l.błędów dla p. strefowego: 173990
+
+Łączna liczba błędów: dla p. równego: 760248,  dla p. proporcjalnego: 872356, dla sterowania częst.: 215, dla p. strefowego: 870421////////////////////////////////////////////////////////
+
+
+Dane wejściowe : 10 procesów, liczba żądań = 1000000, czas pracy = 20000, liczba dostępnych ramek = 1000 ----------------------------------------------
+
+Rozmiar procesu: 2 l. błędów dla p. równego: 1, l. błędów dla p. proporcjalnego: 1, l. błędów dla sterowania częst.: 1, l.błędów dla p. strefowego: 1
+
+Rozmiar procesu: 4 l. błędów dla p. równego: 2, l. błędów dla p. proporcjalnego: 52396, l. błędów dla sterowania częst.: 2, l.błędów dla p. strefowego: 2
+
+Rozmiar procesu: 8 l. błędów dla p. równego: 4, l. błędów dla p. proporcjalnego: 20726, l. błędów dla sterowania częst.: 4, l.błędów dla p. strefowego: 4
+
+Rozmiar procesu: 16 l. błędów dla p. równego: 8, l. błędów dla p. proporcjalnego: 460, l. błędów dla sterowania częst.: 8, l.błędów dla p. strefowego: 8
+
+Rozmiar procesu: 32 l. błędów dla p. równego: 16, l. błędów dla p. proporcjalnego: 6699, l. błędów dla sterowania częst.: 36, l.błędów dla p. strefowego: 16
+
+Rozmiar procesu: 64 l. błędów dla p. równego: 32, l. błędów dla p. proporcjalnego: 1512, l. błędów dla sterowania częst.: 85, l.błędów dla p. strefowego: 32
+
+Rozmiar procesu: 128 l. błędów dla p. równego: 64, l. błędów dla p. proporcjalnego: 852, l. błędów dla sterowania częst.: 16762, l.błędów dla p. strefowego: 64
+
+Rozmiar procesu: 256 l. błędów dla p. równego: 44023, l. błędów dla p. proporcjalnego: 4783, l. błędów dla sterowania częst.: 380, l.błędów dla p. strefowego: 128
+
+Rozmiar procesu: 512 l. błędów dla p. równego: 81714, l. błędów dla p. proporcjalnego: 3421, l. błędów dla sterowania częst.: 97374, l.błędów dla p. strefowego: 5530
+
+Rozmiar procesu: 1024 l. błędów dla p. równego: 207697, l. błędów dla p. proporcjalnego: 6409, l. błędów dla sterowania częst.: 199341, l.błędów dla p. strefowego: 132825
+
+Łączna liczba błędów: dla p. równego: 333561,  dla p. proporcjalnego: 97259, dla sterowania częst.: 313993, dla p. strefowego: 138610////////////////////////////////////////////////////////
+
+

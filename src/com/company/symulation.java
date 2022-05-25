@@ -93,7 +93,7 @@ public class symulation {
     public int unikat(ArrayList<Call> tab,int zakres){
         ArrayList<Call> tym = new ArrayList<>();
         tym.add(tab.get(0));
-        for (int i = 0; i < zakres; i++) {
+        for (int i = 0; i < (zakres% tab.size()); i++) {
             boolean flag = true;
             for (int k = 0;k<tym.size();k++){
                 if (tab.get(i).equals(tym.get(k))){

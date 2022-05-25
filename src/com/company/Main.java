@@ -6,9 +6,9 @@ import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) throws IOException {
 
-    int n = 100000;
-    int ramki = 500;
-    int arrivalTime = 20;
+    int n = 1000000;
+    int ramki = 1000;
+    int arrivalTime = 20000;
     Zapis zapis = new Zapis();
     String main = "Dane wejściowe : 10 procesów, liczba żądań = " + n + ", czas pracy = " + arrivalTime + ", liczba dostępnych ramek = " + ramki + " ----------------------------------------------";
 
